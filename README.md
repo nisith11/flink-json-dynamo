@@ -25,12 +25,13 @@ check the class TransactionRecordFormat for the input json schema as well as out
 1- export your AWS credentails to access the Dynamo DB in your AWS.
 follow the link for more details https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html
 
-export AWS_ACCESS_KEY_ID=<Your Access key>
-export AWS_SECRET_ACCESS_KEY=<Your Secret Access Key>
+export AWS_ACCESS_KEY_ID={Your Access key}
+  
+export AWS_SECRET_ACCESS_KEY={Your Secret Access Key}
   
 2- execute the below command to submit the job 
 
-./bin/flink run -c org.edu.nisith.FlinkJsonStreamDriver <Full Path for your Jar File>flink-json-dynamo-1.0-SNAPSHOT.jar file://<Full path of the folder for Json files to arrive> 
+./bin/flink run -c org.edu.nisith.FlinkJsonStreamDriver {Full Path for your Jar File}flink-json-dynamo-1.0-SNAPSHOT.jar file://{Full path of the folder for Json files to arrive} 
   
 Once the job starts
 copy a sample json into the folder and check the dynamo db for an entry.
